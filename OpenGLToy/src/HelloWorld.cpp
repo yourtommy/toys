@@ -18,7 +18,7 @@ HelloWorld::~HelloWorld() {
 	// TODO Auto-generated destructor stub
 }
 
-void display(void)
+static void display(void)
 {
 /*  clear all pixels  */
     glClear (GL_COLOR_BUFFER_BIT);
@@ -40,7 +40,7 @@ void display(void)
     glFlush ();
 }
 
-void init (void)
+static void init (void)
 {
 /*  select clearing (background) color       */
     glClearColor (0.0, 0.0, 0.0, 0.0);
